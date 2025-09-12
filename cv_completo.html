@@ -1,65 +1,210 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-			"http://www.w3.org/TR/html4/strict.dtd">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-<html>
-	<head>
-		<title>Curriculo Vitae</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	
-	<body>
-		<h1>Curriculo Vitae</h1>
-		
-		<ul id="menu">
-			<li><a href="cv_resumido.html">Resumido</a></li>
-			<li class="ativo">Completo</li>
-		</ul>
-		
-		<div class="secao">
-			<h2>Dados Pessoais</h2>			
-				<div id="hcard-Ademir-Mazer-Jr" class="vcard">
-				  <img src="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=200" alt="photo of Ademir" class="photo"/>
-				 <span class="given-name">Vantuir</span>
-				  <span class="additional-name">Simões da Mota</span>
-				  <span class="family-name">Junior</span>
-				<sup><a href="#1-fn" id="fn1" title="veja o rodapé">1</a></sup>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Vantuir Junior — Currículo</title>
+  <meta name="description" content="Currículo de Vantuir Junior — Engenheiro de Dados (Python, SQL, PostgreSQL, ETL/ELT, DW, Metabase, Power BI)."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-				 <a class="email" href="mailto:vsmjcc@yahoo.com.br">vsmjcc@yahoo.com.br</a>
-				 <a class="url" href="linkedin.com/in/vantuir-junior-836194122">linkedin.com/in/vantuir-junior-836194122</a>
-				
-				<div class="adr">
-				  <span class="locality">Goianá</span>
-				, 
-				  <span class="region">Minas Gerais</span>
+  <!-- OpenGraph -->
+  <meta property="og:type" content="profile"/>
+  <meta property="og:title" content="Vantuir Junior — Currículo"/>
+  <meta property="og:description" content="Engenheiro de Dados. Python • SQL • PostgreSQL • ETL/ELT • DW • Metabase."/>
+  <meta property="og:image" content="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=1200"/>
 
-				 </div>
-				</div>
-		</div>
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Vantuir Simões da Mota Junior",
+    "jobTitle":"Engenheiro de Dados",
+    "email":"mailto:vsmjcc@yahoo.com.br",
+    "image":"https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=400",
+    "address":{"@type":"PostalAddress","addressLocality":"Goianá","addressRegion":"MG","addressCountry":"BR"},
+    "sameAs":["https://www.linkedin.com/in/vantuir-junior-836194122"]
+  }
+  </script>
 
-		<div class="secao">
-			<h2>Dados Profissionais</h2>
-			
-			<p><label>Empresa</label>Zerezes</p>
-			<p><label>Empresa</label>Copel</p>
-			<p><label>Empresa</label>Winponta</p>
-		</div>
+  <style>
+    :root{
+      --bg:#0b0b0b;--card:#121212;--txt:#ededed;--muted:#a6a6a6;--brand:#d4af37;--max:960px;--radius:18px;--shadow:0 12px 30px rgba(0,0,0,.3)
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(11,11,11,.8);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
+    .nav{max-width:var(--max);margin:auto;display:flex;gap:18px;align-items:center;justify-content:space-between;padding:14px 18px}
+    .logo{display:flex;gap:10px;align-items:center}
+    .badge{width:34px;height:34px;border:2px solid var(--brand);border-radius:10px;display:grid;place-items:center;color:var(--brand);font-weight:700}
+    .menu{display:flex;gap:16px}
 
-		<div class="secao">
-			<h2>Formação</h2>
-			
-			<p><label>Curso</label>Bacharel em Ciências da Computação</p>
-			<p><label>Curso</label>Pós Graduação em Desenvolvimento Mobile</p>
-            <p><label>Curso</label>Licenciatura em Matemática</p>
-			<p><label>Curso</label>Especialista SQL</p>
-			<p><label>Curso</label>Especialista Metabase</p>
-			<p><label>Curso</label>Especialista Data Studio</p>
-			<p><label>Curso</label>Especialista Google Sheets</p>
+    main{max-width:var(--max);margin:28px auto;padding:0 18px}
+    .title{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:10px}
+    h1{font-size:32px;margin:0}
+    .subtitle{color:var(--muted)}
 
-		</div>
-		
-		<div id="footnote">
-			<li id="1-fn">1 - Microformato <a href="#fn1" title="volte">^</a></li>
-			<li>Este <a href="http://microformats.org/wiki/hcard">hCard</a> foi criado com <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.</li>
-		</div>		
-	</body>
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .grid{display:grid;gap:18px}
+    .grid-2{grid-template-columns:1fr 1fr}
+    @media (max-width:800px){.grid-2{grid-template-columns:1fr}}
+
+    .section{margin:22px 0}
+    .section h2{font-size:20px;margin:0 0 10px}
+
+    .row{display:flex;gap:12px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid rgba(212,175,55,.25)}
+
+    .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(212,175,55,.35);color:var(--brand);padding:4px 10px;border-radius:999px;font-size:12px;background:rgba(212,175,55,.08)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+
+    .xp{display:grid;gap:12px}
+    .xp-item{padding:14px;border:1px solid rgba(255,255,255,.06);border-radius:14px}
+    .xp-item h3{margin:0 0 4px;font-size:16px}
+    .xp-item .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+
+    .edu{display:grid;gap:8px}
+
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+    .btn{appearance:none;border:none;padding:10px 12px;border-radius:10px;background:var(--brand);color:#111;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.14);color:var(--txt)}
+
+    footer{color:var(--muted);border-top:1px solid rgba(255,255,255,.06);margin-top:28px;padding:18px;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Navegação">
+      <div class="logo"><div class="badge">VJ</div><strong>Vantuir Junior</strong></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="#contato">Contato</a>
+        <button class="btn ghost" id="toggle-resumo" title="Alternar versão resumida">Resumir</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="title">
+      <h1>Currículo</h1>
+      <span class="tag">Engenharia de Dados • BI • ML</span>
+    </div>
+
+    <section class="grid grid-2 section">
+      <div class="card">
+        <div class="row">
+          <img class="avatar" alt="Foto de perfil" src="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=400"/>
+          <div>
+            <strong>Vantuir Simões da Mota Junior</strong>
+            <div class="subtitle">Goianá, MG — Brasil</div>
+            <div class="chips" style="margin-top:8px">
+              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+              <span class="chip">ETL/ELT</span><span class="chip">Metabase</span><span class="chip">Power BI</span>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Resumo</h2>
+          <p id="about">Engenheiro de Dados com foco em pipelines Python, DW em Postgres (Heroku), modelagem dimensional (estrela/constelação) e dashboards de impacto (Metabase/Power BI). Experiência com logs de execução, fallback e integrações (Shopify, Zoop, GA4, etc.).</p>
+        </div>
+        <div class="section">
+          <h2>Contato</h2>
+          <p>
+            <a href="mailto:vsmjcc@yahoo.com.br">vsmjcc@yahoo.com.br</a> ·
+            <a href="https://www.linkedin.com/in/vantuir-junior-836194122" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card" id="quick-facts">
+        <h2>Informações Rápidas</h2>
+        <ul>
+          <li>Tempo de experiência com dados: 4+ anos</li>
+          <li>Domínios: E‑commerce B2B/B2B2C, Assinaturas, KPIs executivos</li>
+          <li>Infra: Heroku, Docker; integrações: GA4, Zoop, Shopify, Sheets</li>
+        </ul>
+        <div class="section">
+          <h2>Stacks</h2>
+          <div class="chips">
+            <span class="chip">Pandas</span><span class="chip">psycopg2</span><span class="chip">Git</span><span class="chip">AWS Lambda</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card" id="xp">
+      <h2>Experiência</h2>
+      <div class="xp" id="xp-list"></div>
+    </section>
+
+    <section class="section card" id="education">
+      <h2>Formação</h2>
+      <div class="edu" id="edu-list"></div>
+    </section>
+
+    <section class="section card" id="contato">
+      <h2>Contato</h2>
+      <p>Aberto a colaborações e projetos. Envie um e-mail para <a href="mailto:vsmjcc@yahoo.com.br">vsmjcc@yahoo.com.br</a> ou conecte-se pelo <a href="https://www.linkedin.com/in/vantuir-junior-836194122" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </section>
+
+    <footer>© <span id="year"></span> Vantuir Junior. Todos os direitos reservados.</footer>
+  </main>
+
+  <script>
+    // ===== Dados (substituiremos pelo LinkedIn quando você autorizar) =====
+    const data = {
+      experiences: [
+        { company:"Zerezes", role:"Engenheiro de Dados", period:"2023 — atual", summary:"DW em Postgres (Heroku), ETLs robustos com logs (dw.job_logs), cargas incrementais e dashboards em Metabase.", bullets:["Modelagem estrela/constelação","Pipelines Python (pandas/psycopg2)","Indicadores de churn/retensão"]},
+        { company:"Copel", role:"Analista de Dados", period:"2021 — 2023", summary:"Relatórios executivos e automações de dados.", bullets:["SQL avançado","Power BI","Integrações e ETL"]},
+        { company:"Winponta", role:"Desenvolvedor", period:"2019 — 2021", summary:"Integrações, APIs e manutenção de sistemas.", bullets:["APIs REST","Python","Integrações externas"]}
+      ],
+      education: [
+        { course:"Bacharel em Ciências da Computação", org:"—" },
+        { course:"Pós-graduação em Desenvolvimento Mobile", org:"—" },
+        { course:"Licenciatura em Matemática", org:"—" },
+        { course:"Especialista em SQL / Metabase / Data Studio / Google Sheets", org:"—" }
+      ]
+    };
+
+    // Render XP
+    const xpList = document.getElementById('xp-list');
+    data.experiences.forEach(x=>{
+      const el = document.createElement('div');
+      el.className = 'xp-item';
+      el.innerHTML = `
+        <h3>${x.role} · <span style="color:var(--brand)">${x.company}</span></h3>
+        <div class="meta">${x.period}</div>
+        <p>${x.summary}</p>
+        ${x.bullets ? `<ul>${x.bullets.map(b=>`<li>${b}</li>`).join('')}</ul>`:''}
+      `;
+      xpList.appendChild(el);
+    });
+
+    // Render EDU
+    const eduList = document.getElementById('edu-list');
+    data.education.forEach(e=>{
+      const el = document.createElement('div');
+      el.innerHTML = `<strong>${e.course}</strong> <span class="subtitle">${e.org||''}</span>`;
+      eduList.appendChild(el);
+    });
+
+    // Utilidades
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Toggle Resumo (esconde educação + parte da lateral para versão "resumida")
+    const btn = document.getElementById('toggle-resumo');
+    let resumido = false;
+    btn.addEventListener('click', ()=>{
+      resumido = !resumido;
+      document.getElementById('education').style.display = resumido ? 'none':'block';
+      document.getElementById('quick-facts').style.display = resumido ? 'none':'block';
+      btn.textContent = resumido ? 'Versão completa' : 'Resumir';
+    });
+  </script>
+</body>
 </html>
