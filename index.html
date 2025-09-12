@@ -37,68 +37,40 @@
     "image": "https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=400",
     "url": "https://seu-dominio.com",
     "address": {"@type":"PostalAddress","addressLocality":"Goianá","addressRegion":"MG","addressCountry":"BR"},
-    "sameAs": [
-      "https://www.linkedin.com/in/vantuir-junior-836194122"
-    ]
+    "sameAs": ["https://www.linkedin.com/in/vantuir-junior-836194122"]
   }
   </script>
 
   <style>
-    :root{
-      --bg:#0b0b0b; --card:#121212; --txt:#eaeaea; --muted:#a6a6a6;
-      --brand:#d4af37; --brand-2:#b58d1d; --max:1100px; --radius:20px;
-      --shadow:0 10px 30px rgba(0,0,0,.25);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    :root{--bg:#0b0b0b;--card:#121212;--txt:#eaeaea;--muted:#a6a6a6;--brand:#d4af37;--brand-2:#b58d1d;--max:1100px;--radius:20px;--shadow:0 10px 30px rgba(0,0,0,.25)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
     body{margin:0;background:var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
     header{position:sticky;top:0;z-index:50;background:rgba(11,11,11,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
     .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
     .brand{display:flex;gap:12px;align-items:center}
     .logo{width:36px;height:36px;border:2px solid var(--brand);border-radius:10px;display:grid;place-items:center;font-weight:700;color:var(--brand)}
-    .nav a{color:var(--txt);opacity:.9}
-    .menu{display:flex;gap:18px}
-    .menu a:hover{color:var(--brand)}
-
+    .nav a{color:var(--txt);opacity:.9}.menu{display:flex;gap:18px}.menu a:hover{color:var(--brand)}
     .hero{max-width:var(--max);margin:40px auto;padding:24px 18px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-    .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(212,175,55,.35);color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;letter-spacing:.4px;background:rgba(212,175,55,.08)}
-    h1{font-size:44px;line-height:1.1;margin:10px 0 12px}
-    .lead{color:var(--muted);max-width:620px}
+    .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(212,175,55,.35);color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;background:rgba(212,175,55,.08)}
+    h1{font-size:44px;line-height:1.1;margin:10px 0 12px}.lead{color:var(--muted);max-width:620px}
     .cta{display:flex;gap:12px;margin-top:18px}
     .btn{appearance:none;border:none;background:var(--brand);color:#111;font-weight:700;padding:12px 16px;border-radius:12px;cursor:pointer;box-shadow:var(--shadow)}
     .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--txt)}
     .photo{width:220px;height:220px;border-radius:50%;object-fit:cover;box-shadow:var(--shadow);border:4px solid rgba(212,175,55,.25);animation:float 6s ease-in-out infinite}
     @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-
     section{max-width:var(--max);margin:56px auto;padding:0 18px}
-    .section-title{font-size:28px;margin:0 0 14px}
-    .muted{color:var(--muted)}
-
-    .timeline{display:grid;gap:16px}
-    .item{padding:18px;border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);background:var(--card)}
-    .item h3{margin:0 0 4px;font-size:18px}
-    .item .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
-
+    .section-title{font-size:28px;margin:0 0 14px}.muted{color:var(--muted)}
+    .timeline{display:grid;gap:16px}.item{padding:18px;border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);background:var(--card)}
+    .item h3{margin:0 0 4px;font-size:18px}.item .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
     .grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
     .card{grid-column:span 4;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-    .card img{width:100%;height:180px;object-fit:cover}
-    .card .p{padding:16px}
-    .card h3{margin:0 0 6px}
-
-    .skills{display:flex;flex-wrap:wrap;gap:10px}
-    .skill{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}
-
-    form{display:grid;gap:12px;max-width:560px}
-    input,textarea{background:#0f0f0f;color:var(--txt);border:1px solid rgba(255,255,255,.08);padding:12px 14px;border-radius:12px}
-    textarea{min-height:140px}
-    .legal{font-size:12px;color:var(--muted)}
+    .card img{width:100%;height:180px;object-fit:cover}.card .p{padding:16px}.card h3{margin:0 0 6px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}
+    form{display:grid;gap:12px;max-width:560px} input,textarea{background:#0f0f0f;color:var(--txt);border:1px solid rgba(255,255,255,.08);padding:12px 14px;border-radius:12px}
+    textarea{min-height:140px}.legal{font-size:12px;color:var(--muted)}
     footer{border-top:1px solid rgba(255,255,255,.06);margin-top:56px;padding:22px 18px;color:var(--muted);text-align:center}
-
     @media (max-width:900px){.hero{grid-template-columns:1fr;gap:18px;text-align:center}.cta{justify-content:center}.brand{justify-content:center}.grid .card{grid-column:span 6}}
     @media (max-width:600px){h1{font-size:34px}.grid .card{grid-column:span 12}}
   </style>
@@ -108,16 +80,13 @@
 
   <header>
     <nav class="nav" aria-label="Principal">
-      <div class="brand">
-        <div class="logo">VJ</div>
-        <strong>Vantuir Junior</strong>
-      </div>
+      <div class="brand"><div class="logo">VJ</div><strong>Vantuir Junior</strong></div>
       <div class="menu">
         <a href="#sobre">Sobre</a>
         <a href="#experiencia">Experiência</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
-        <a href="cv_completo.html" aria-label="Abrir currículo completo">CV</a>
+        <a href="cv_completo.html">CV</a>
       </div>
     </nav>
   </header>
@@ -127,9 +96,8 @@
       <span class="tag">Engenharia de Dados • BI • ML</span>
       <h1>Cientista da Computação & Engenheiro de Dados</h1>
       <p class="lead">
-        Formação sólida e foco em <strong>Python</strong>, <strong>SQL</strong>, <strong>ETL/ELT</strong> e
-        <strong>PostgreSQL</strong>. Construo <em>Data Warehouses</em>, pipelines escaláveis e dashboards em
-        <strong>Metabase</strong> e <strong>Power BI</strong>. Apaixonado por aprendizado contínuo. 
+        Foco em <strong>Python</strong>, <strong>SQL</strong>, <strong>ETL/ELT</strong> e <strong>PostgreSQL</strong>.
+        Construo <em>Data Warehouses</em>, pipelines escaláveis e dashboards em <strong>Metabase</strong> e <strong>Power BI</strong>.
       </p>
       <div class="cta">
         <a class="btn" href="#contato">Falar comigo</a>
@@ -179,13 +147,12 @@
   <footer>© <span id="year"></span> Vantuir Junior. Todos os direitos reservados.</footer>
 
   <script>
-    // ===== Dados a partir do seu perfil público =====
+    // ===== Apenas o que você confirmou aqui (sem Copel) =====
     const data = {
-      about: `Cientista da Computação e Engenheiro de Dados com foco em Python/SQL, ETL/ELT e Data Warehouse em PostgreSQL (Heroku). Construo pipelines robustos, modelo estrela/constelação e painéis executivos em Metabase/Power BI.`,
+      about: `Cientista da Computação e Engenheiro de Dados com foco em Python/SQL, ETL/ELT e Data Warehouse em PostgreSQL (Heroku).`,
       experiences: [
-        { company:"Zerezes", role:"Cientista/Engenheiro de Dados", period:"2021 — atual", summary:"DW em Postgres (Heroku), ETLs Python (pandas/psycopg2) com logs e cargas incrementais; dashboards no Metabase; padronização de KPIs.", stack:["Python","PostgreSQL","Heroku","Metabase","Git"] },
-        { company:"Copel", role:"Analista de Dados", period:"2021 — 2023", summary:"Modelagem dimensional, automações e relatórios executivos; governança de dados e KPIs.", stack:["SQL","ETL","Power BI","Data Studio"] },
-        { company:"Winponta", role:"Desenvolvedor", period:"2019 — 2021", summary:"Integrações e APIs; sustentação de sistemas; análises ad hoc.", stack:["Python","APIs","Git"] }
+        { company:"Zerezes", role:"Engenheiro de Dados", period:"(ajuste a data ex.: 2023 — atual)", summary:"DW em Postgres (Heroku), ETLs Python (pandas/psycopg2), logs (dw.job_logs), cargas incrementais e dashboards no Metabase.", stack:["Python","PostgreSQL","Heroku","Metabase","Git"] },
+        { company:"Winponta", role:"Desenvolvedor", period:"(ajuste a data ex.: 2019 — 2021)", summary:"Integrações, APIs e sustentação de sistemas; análises ad hoc.", stack:["Python","APIs","Git"] }
       ],
       projects: [
         { title:"Data Warehouse — B2B/B2B2C", img:"./img/sistema.png", link:"#", desc:"Modelo estrela/constelação para e-commerce (assinaturas, pedidos, pagamentos)." },
@@ -195,7 +162,6 @@
       skills:["Python","Pandas","SQL","PostgreSQL","Heroku","Docker","Metabase","Power BI","Google Data Studio","Excel","Git","AWS Lambda","Machine Learning"]
     };
 
-    // Render experiência
     const expList = document.getElementById('exp-list');
     data.experiences.forEach(x=>{
       const el = document.createElement('article');
@@ -209,7 +175,6 @@
       expList.appendChild(el);
     });
 
-    // Render projetos
     const grid = document.getElementById('projects-grid');
     data.projects.forEach(p=>{
       const el = document.createElement('a');
@@ -217,15 +182,10 @@
       el.rel = 'noopener'; el.className = 'card';
       el.innerHTML = `
         <img alt="${p.title}" src="${p.img}"/>
-        <div class="p">
-          <h3>${p.title}</h3>
-          <p class="muted">${p.desc||''}</p>
-        </div>
-      `;
+        <div class="p"><h3>${p.title}</h3><p class="muted">${p.desc||''}</p></div>`;
       grid.appendChild(el);
     });
 
-    // Render skills
     const skills = document.getElementById('skills');
     data.skills.forEach(s=>{
       const el = document.createElement('span');
