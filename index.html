@@ -1,131 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vantuir Junior — Engenheiro de Dados</title>
+  <meta name="description" content="Engenheiro de Dados e Cientista da Computação. Projetos em Python, SQL, ETL/ELT, DW em Postgres, BI (Metabase/Looker/Power BI) e ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vantuir Junior — Engenheiro de Dados" />
+  <meta property="og:description" content="Engenheiro de Dados. Python • SQL • PostgreSQL • ETL/ELT • DW • Metabase • Machine Learning." />
+  <meta property="og:image" content="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PFGW54RLC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9PFGW54RLC');
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9PFGW54RLC');
   </script>
- 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-  <link rel="stylesheet" href="style_site.css">
-  <title>Site</title>
 
+  <!-- Schema.org (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vantuir Simões da Mota Junior",
+    "jobTitle": "Engenheiro de Dados",
+    "email": "mailto:vsmjcc@yahoo.com.br",
+    "image": "https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=400",
+    "url": "https://seu-dominio.com",
+    "address": {"@type":"PostalAddress","addressLocality":"Goianá","addressRegion":"MG","addressCountry":"BR"},
+    "sameAs": [
+      "https://www.linkedin.com/in/vantuir-junior-836194122"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0b0b; /* preto elegante */
+      --card:#121212;
+      --txt:#eaeaea;
+      --muted:#a6a6a6;
+      --brand:#d4af37; /* dourado */
+      --brand-2:#b58d1d;
+      --max:1100px;
+      --radius:20px;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(11,11,11,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:36px;height:36px;border:2px solid var(--brand);border-radius:10px;display:grid;place-items:center;font-weight:700;color:var(--brand)}
+    .nav a{color:var(--txt);opacity:.9}
+    .menu{display:flex;gap:18px}
+    .menu a:hover{color:var(--brand)}
+
+    /* Hero */
+    .hero{max-width:var(--max);margin:40px auto;padding:24px 18px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(212,175,55,.35);color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px;letter-spacing:.4px;background:rgba(212,175,55,.08)}
+    h1{font-size:44px;line-height:1.1;margin:10px 0 12px}
+    .lead{color:var(--muted);max-width:620px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{appearance:none;border:none;background:var(--brand);color:#111;font-weight:700;padding:12px 16px;border-radius:12px;cursor:pointer;box-shadow:var(--shadow)}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--txt)}
+    .photo{width:220px;height:220px;border-radius:50%;object-fit:cover;box-shadow:var(--shadow);border:4px solid rgba(212,175,55,.25);animation:float 6s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+    /* Sections */
+    section{max-width:var(--max);margin:56px auto;padding:0 18px}
+    .section-title{font-size:28px;margin:0 0 14px}
+    .muted{color:var(--muted)}
+
+    /* Experience */
+    .timeline{display:grid;gap:16px}
+    .item{padding:18px;border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);background:var(--card)}
+    .item h3{margin:0 0 4px;font-size:18px}
+    .item .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+
+    /* Projects */
+    .grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
+    .card{grid-column:span 4;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card .p{padding:16px}
+    .card h3{margin:0 0 6px}
+
+    /* Skills */
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}
+
+    /* Contact */
+    form{display:grid;gap:12px;max-width:560px}
+    input,textarea{background:#0f0f0f;color:var(--txt);border:1px solid rgba(255,255,255,.08);padding:12px 14px;border-radius:12px}
+    textarea{min-height:140px}
+    .legal{font-size:12px;color:var(--muted)}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);margin-top:56px;padding:22px 18px;color:var(--muted);text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;gap:18px;text-align:center}
+      .cta{justify-content:center}
+      .brand{justify-content:center}
+      .grid .card{grid-column:span 6}
+    }
+    @media (max-width:600px){
+      h1{font-size:34px}
+      .grid .card{grid-column:span 12}
+    }
+  </style>
 </head>
-  
 <body>
+  <!-- GTM (noscript) opcional -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQT5BJB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQT5BJB"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <main>
-    <!-- HEADER -->
-    <header>
-      <div class="logo">
-        LOGO
+  <header>
+    <nav class="nav" aria-label="Principal">
+      <div class="brand">
+        <div class="logo">VJ</div>
+        <strong>Vantuir Junior</strong>
       </div>
       <div class="menu">
-        <nav class="nav-list">
-            <a href="#home">Home</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
-            <a href="cv_completo.html">Completo</a>
-        </nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <a href="cv_completo.html" aria-label="Abrir currículo completo">CV</a>
       </div>
-    </header>  
-    
-    <!-- HOME -->   
-    <section id="home">
-      <div class="home-info">
-        <h2>Olá, sou Vantuir</h2>
-        <span class="home-position">Engenheiro de Dados</span>
-        <span class="home-resume">
-          Graduado em Ciência da Computação, 
-          tenho experiência em ciência de dados utilizando
-          Python, SQL, Excel, Metabase, Data Studio, Power BI e Machine Learning.
-        </span>
+    </nav>
+  </header>
 
-        <button>
-          <a href="#contact">Contate-me</a>
-        </button>
+  <!-- HERO / SOBRE -->
+  <section class="hero" id="sobre">
+    <div>
+      <span class="tag">Engenharia de Dados • BI • ML</span>
+      <h1>Transformo dados em produtos <span style="color:var(--brand)">acionáveis</span>.</h1>
+      <p class="lead">
+        Cientista da Computação com experiência em <strong>Python</strong>, <strong>SQL</strong>, ETL/ELT, 
+        <strong>PostgreSQL</strong>, <strong>Heroku</strong>, <strong>Metabase</strong>, <strong>Google Data Studio</strong> e <strong>Power BI</strong>. 
+        Atuo construindo <em>pipelines</em>, <em>Data Warehouses</em> e dashboards de alto impacto.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#contato">Falar comigo</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/vantuir-junior-836194122" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-      <div class="home-img">
-        <img src="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=200" alt="Foto de perfil">
+      <div class="chips" aria-label="Stacks principais">
+        <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+        <span class="chip">Metabase</span><span class="chip">ETL/ELT</span><span class="chip">Docker</span>
       </div>
-    </section>
-
-    <!-- PROJECTS -->
-
-    <section id="projects">
-      <h2>Projetos</h2>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/site.png" alt="Foto de um site">
-            </div>
-            <div class="project-info">
-              <h2>WebSites Modernos</h2>
-              <p>Criação de websites modernos responsivos para qualquer dispositivo.</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/shop.png" alt="Foto de uma loja online">
-            </div>
-            <div class="project-info">
-              <h2>E-commerce</h2>
-              <p>Criação de lojas online de qualquer produto.</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="project-img">
-              <img src="./img/sistema.png" alt="Foto de um sistema">
-            </div>
-            <div class="project-info">
-              <h2>Sistemas completos</h2>
-              <p>Criação de sistemas completos desde o back-end até o front-end.</p>
-            </div>
-          </div>
-        </div>
-      
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+    </div>
+    <div style="display:grid;place-items:center">
+      <img class="photo" alt="Foto de perfil de Vantuir Junior" src="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=400"/>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- EXPERIÊNCIA (auto-preenchível por JSON) -->
+  <section id="experiencia" aria-labelledby="experiencia-title">
+    <h2 class="section-title" id="experiencia-title">Experiência</h2>
+    <p class="muted">Conteúdo carregado do seu JSON de perfil (pode ser gerado do LinkedIn).</p>
+    <div class="timeline" id="exp-list"></div>
+  </section>
 
-  <section id="contact">
-    <h2>Contato</h2>
-    <form>
-      <input type="text" placeholder="Digite seu nome" />
-      <input type="email" placeholder="Digite seu e-mail" />
-      <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-      <button>Enviar</button>
+  <!-- PROJETOS -->
+  <section id="projetos" aria-labelledby="projetos-title">
+    <h2 class="section-title" id="projetos-title">Projetos em destaque</h2>
+    <div class="grid" id="projects-grid">
+      <!-- Cards gerados via JS a partir de data.projects -->
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section aria-labelledby="skills-title">
+    <h2 class="section-title" id="skills-title">Competências</h2>
+    <div class="skills" id="skills"></div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" aria-labelledby="contato-title">
+    <h2 class="section-title" id="contato-title">Contato</h2>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none"><label>Não preencha <input name="bot-field"></label></p>
+      <label class="sr-only" for="nome">Nome</label>
+      <input id="nome" name="nome" placeholder="Seu nome" required>
+      <label class="sr-only" for="email">E-mail</label>
+      <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
+      <label class="sr-only" for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Como posso ajudar?" required></textarea>
+      <button class="btn" type="submit">Enviar mensagem</button>
+      <p class="legal">Ou mande um e-mail direto para <a href="mailto:vsmjcc@yahoo.com.br">vsmjcc@yahoo.com.br</a>.</p>
     </form>
   </section>
 
   <footer>
-    copyright © 2022 William Lucas. Todos os direitos reservados
+    © <span id="year"></span> Vantuir Junior. Todos os direitos reservados.
   </footer>
-  </main>  
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+    // ===== Dados estruturados (substituiremos com seu LinkedIn) =====
+    const data = {
+      about: `Engenheiro de Dados com foco em DW no Postgres (Heroku), pipelines Python e BI com Metabase. Experiência em construir modelos estrela/constelação, ETLs robustos com logs e fallback, e integrações (Shopify, Zoop, GA4, etc.).`,
+      experiences: [
+        { company:"Zerezes", role:"Engenheiro de Dados", period:"2023 — atual", summary:"DW em Postgres, ETLs Python (pandas/psycopg2), dashboards no Metabase.", stack:["Python","PostgreSQL","Heroku","Metabase"] },
+        { company:"Copel", role:"Analista de Dados", period:"2021 — 2023", summary:"Modelagem dimensional, automações, relatórios executivos.", stack:["SQL","ETL","Power BI"] },
+        { company:"Winponta", role:"Desenvolvedor", period:"2019 — 2021", summary:"APIs, integrações e manutenção de sistemas.", stack:["Python","APIs"] }
+      ],
+      projects: [
+        { title:"Data Warehouse — B2B/B2B2C", img:"./img/sistema.png", link:"#", desc:"Modelo estrela/constelação para e‑commerce com fatos de assinaturas e pedidos." },
+        { title:"ETL Python no Heroku", img:"./img/site.png", link:"#", desc:"Pipelines com logs em dw.job_logs, fallback e cargas incrementais." },
+        { title:"Dashboard de Churn e Retenção", img:"./img/shop.png", link:"#", desc:"Metabase com cohort, churn mensal, crescimento líquido e NPS." }
+      ],
+      skills:["Python","Pandas","SQL","PostgreSQL","Heroku","Docker","Metabase","Power BI","Google Data Studio","Git","AWS Lambda"]
+    };
+
+    // ===== Render =====
+    const expList = document.getElementById('exp-list');
+    data.experiences.forEach(x=>{
+      const el = document.createElement('article');
+      el.className = 'item';
+      el.innerHTML = `
+        <h3>${x.role} · <span style="color:var(--brand)">${x.company}</span></h3>
+        <div class="meta">${x.period}</div>
+        <p>${x.summary}</p>
+        <div class="chips">${(x.stack||[]).map(s=>`<span class='chip'>${s}</span>`).join('')}</div>
+      `;
+      expList.appendChild(el);
+    });
+
+    const grid = document.getElementById('projects-grid');
+    data.projects.forEach(p=>{
+      const el = document.createElement('a');
+      el.href = p.link || '#'; el.target = p.link && p.link.startsWith('http') ? '_blank' : '_self';
+      el.rel = 'noopener'; el.className = 'card';
+      el.innerHTML = `
+        <img alt="${p.title}" src="${p.img}"/>
+        <div class="p">
+          <h3>${p.title}</h3>
+          <p class="muted">${p.desc||''}</p>
+        </div>
+      `;
+      grid.appendChild(el);
+    });
+
+    const skills = document.getElementById('skills');
+    data.skills.forEach(s=>{
+      const el = document.createElement('span');
+      el.className = 'skill'; el.textContent = s; skills.appendChild(el);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
