@@ -1,192 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Vantuir Junior — Currículo</title>
-  <meta name="description" content="Currículo de Vantuir Junior — Cientista da Computação e Engenheiro de Dados. Python, SQL, PostgreSQL, ETL/ELT, DW, Metabase, Power BI."/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vantuir Junior — Currículo | Senior Data Engineer</title>
+  <meta name="description" content="Currículo de Vantuir Junior, Senior Data Engineer com experiência em Data Warehouse, ETL/ELT, dbt, Dagster, BI, governança de dados, AWS, GCP e automações com IA." />
+  <link rel="canonical" href="https://vsmjcc.github.io/Meu_Site/cv_completo.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <meta property="og:type" content="profile"/>
-  <meta property="og:title" content="Vantuir Junior — Currículo"/>
-  <meta property="og:description" content="Engenheiro de Dados. Python • SQL • PostgreSQL • ETL/ELT • DW • Metabase."/>
-  <meta property="og:image" content="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=1200"/>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{ --bg:#0b0b0b;--card:#121212;--txt:#ededed;--muted:#a6a6a6;--brand:#d4af37;--max:960px;--radius:18px;--shadow:0 12px 30px rgba(0,0,0,.3) }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{position:sticky;top:0;background:rgba(11,11,11,.8);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
-    .nav{max-width:var(--max);margin:auto;display:flex;gap:18px;align-items:center;justify-content:space-between;padding:14px 18px}
-    .logo{display:flex;gap:10px;align-items:center}
-    .badge{width:34px;height:34px;border:2px solid var(--brand);border-radius:10px;display:grid;place-items:center;color:var(--brand);font-weight:700}
-    .menu{display:flex;gap:16px}
-
-    main{max-width:var(--max);margin:28px auto;padding:0 18px}
-    .title{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:10px}
-    h1{font-size:32px;margin:0}
-    .subtitle{color:var(--muted)}
-
-    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
-    .grid{display:grid;gap:18px}
-    .grid-2{grid-template-columns:1fr 1fr}
-    @media (max-width:800px){.grid-2{grid-template-columns:1fr}}
-
-    .section{margin:22px 0}
-    .section h2{font-size:20px;margin:0 0 10px}
-
-    .row{display:flex;gap:12px;align-items:center}
-    .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid rgba(212,175,55,.25)}
-
-    .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(212,175,55,.35);color:var(--brand);padding:4px 10px;border-radius:999px;font-size:12px;background:rgba(212,175,55,.08)}
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
-
-    .xp{display:grid;gap:12px}
-    .xp-item{padding:14px;border:1px solid rgba(255,255,255,.06);border-radius:14px}
-    .xp-item h3{margin:0 0 4px;font-size:16px}
-    .xp-item .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
-
-    .edu{display:grid;gap:8px}
-
-    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
-    .btn{appearance:none;border:none;padding:10px 12px;border-radius:10px;background:var(--brand);color:#111;font-weight:700;cursor:pointer}
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.14);color:var(--txt)}
-
-    footer{color:var(--muted);border-top:1px solid rgba(255,255,255,.06);margin-top:28px;padding:18px;text-align:center}
+    :root{--bg:#080808;--card:#141414;--txt:#f4f4f5;--muted:#a1a1aa;--brand:#d4af37;--brand2:#f2d57e;--line:rgba(255,255,255,.09);--max:1040px;--radius:22px;--shadow:0 20px 60px rgba(0,0,0,.32)}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,rgba(212,175,55,.12),transparent 32%),var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}a{color:var(--brand2);text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+    header{position:sticky;top:0;z-index:20;background:rgba(8,8,8,.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;gap:12px;align-items:center;font-weight:800;color:var(--txt)}.logo{width:40px;height:40px;border:1px solid rgba(212,175,55,.55);border-radius:14px;display:grid;place-items:center;color:var(--brand);background:rgba(212,175,55,.08)}.menu{display:flex;gap:16px}.menu a{color:var(--txt);font-size:14px;opacity:.9}
+    main{padding:42px 0}.hero{display:grid;grid-template-columns:1fr 280px;gap:24px;align-items:center;margin-bottom:24px}.card{background:linear-gradient(180deg,var(--card),#191919);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}h1{font-size:42px;line-height:1.05;margin:0 0 10px;letter-spacing:-1.4px}h2{font-size:24px;margin:0 0 14px;color:var(--brand2)}h3{margin:0 0 6px}.muted{color:var(--muted)}.tag{display:inline-flex;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.08);color:var(--brand2);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.35px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);padding:7px 10px;border-radius:999px;color:#d4d4d8;font-size:12px}.chip.gold{color:var(--brand2);border-color:rgba(212,175,55,.35);background:rgba(212,175,55,.08)}.avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid rgba(212,175,55,.28);display:block;margin:0 auto 14px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.span-4{grid-column:span 4}.span-8{grid-column:span 8}.span-12{grid-column:span 12}.xp{display:grid;grid-template-columns:180px 1fr;gap:18px;padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035);margin-bottom:14px}.date{font-weight:800;color:var(--brand2)}ul{margin:10px 0 0;padding-left:20px}.section{margin-top:18px}.print{margin-top:16px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(212,175,55,.35);background:var(--brand);color:#101010;font-weight:800;padding:10px 14px;border-radius:12px}.btn.secondary{background:transparent;color:var(--txt);border-color:var(--line)}footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;padding:24px 18px;margin-top:32px}@media print{header,.print,footer{display:none}body{background:#fff;color:#111}.card,.xp{box-shadow:none;border:1px solid #ddd;background:#fff}.muted{color:#444}a{color:#111}.chip,.tag{border:1px solid #ccc;color:#111;background:#fff}}@media(max-width:860px){.hero{grid-template-columns:1fr}.span-4,.span-8{grid-column:span 12}.xp{grid-template-columns:1fr}.menu{display:none}h1{font-size:34px}}
   </style>
 </head>
 <body>
-  <header>
-    <nav class="nav" aria-label="Navegação">
-      <div class="logo"><div class="badge">VJ</div><strong>Vantuir Junior</strong></div>
-      <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="#contato">Contato</a>
-        <button class="btn ghost" id="toggle-resumo" title="Alternar versão resumida">Resumir</button>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="title">
-      <h1>Currículo</h1>
-      <span class="tag">Engenharia de Dados • BI • ML</span>
-    </div>
-
-    <section class="grid grid-2 section">
+  <header><div class="wrap nav"><a class="brand" href="index.html"><span class="logo">VJ</span><span>Vantuir Junior</span></a><nav class="menu"><a href="index.html">Portfólio</a><a href="mailto:vsmjcc@yahoo.com.br">E-mail</a><a href="https://www.linkedin.com/in/vantuir-junior-836194122" target="_blank" rel="noopener">LinkedIn</a></nav></div></header>
+  <main class="wrap">
+    <section class="hero">
       <div class="card">
-        <div class="row">
-          <img class="avatar" alt="Foto de perfil" src="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=400"/>
-          <div>
-            <strong>Vantuir Simões da Mota Junior</strong>
-            <div class="subtitle">Goianá, MG — Brasil</div>
-            <div class="chips" style="margin-top:8px">
-              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
-              <span class="chip">ETL/ELT</span><span class="chip">Metabase</span><span class="chip">Power BI</span>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <h2>Resumo</h2>
-          <p id="about">Cientista da Computação e Engenheiro de Dados com foco em pipelines Python, DW em Postgres (Heroku), modelagem dimensional (estrela/constelação) e dashboards em Metabase/Power BI. Experiência com logs de execução, fallback e integrações (Shopify, Zoop, GA4, etc.).</p>
-        </div>
-        <div class="section">
-          <h2>Contato</h2>
-          <p>
-            <a href="mailto:vsmjcc@yahoo.com.br">vsmjcc@yahoo.com.br</a> ·
-            <a href="https://www.linkedin.com/in/vantuir-junior-836194122" target="_blank" rel="noopener">LinkedIn</a>
-          </p>
-        </div>
+        <span class="tag">Senior Data Engineer</span>
+        <h1>Vantuir Simões da Mota Junior</h1>
+        <p class="muted">Engenheiro de Dados Sênior com experiência na construção de ecossistemas de dados ponta a ponta: Data Warehouse, pipelines ETL/ELT, modelagem dimensional, dbt, Dagster, BI, governança, observabilidade e automações com IA aplicadas a dados.</p>
+        <div class="chips"><span class="chip gold">Python</span><span class="chip gold">SQL</span><span class="chip gold">PostgreSQL</span><span class="chip gold">dbt</span><span class="chip gold">Dagster</span><span class="chip gold">Metabase</span><span class="chip gold">AWS</span><span class="chip gold">GCP</span></div>
+        <div class="print"><a class="btn" href="javascript:window.print()">Imprimir / salvar PDF</a> <a class="btn secondary" href="index.html">Voltar ao portfólio</a></div>
       </div>
-
-      <div class="card" id="quick-facts">
-        <h2>Informações Rápidas</h2>
-        <ul>
-          <li>Tempo de experiência com dados: 4+ anos</li>
-          <li>Domínios: E-commerce B2B/B2B2C, Assinaturas, KPIs executivos</li>
-          <li>Infra: Heroku, Docker; integrações: GA4, Zoop, Shopify, Sheets</li>
-        </ul>
-        <div class="section">
-          <h2>Stacks</h2>
-          <div class="chips">
-            <span class="chip">Pandas</span><span class="chip">psycopg2</span><span class="chip">Git</span><span class="chip">AWS Lambda</span>
-          </div>
-        </div>
-      </div>
+      <aside class="card">
+        <img class="avatar" alt="Foto de perfil" src="https://0.gravatar.com/avatar/e3f2a1d35ca8733e408f5233edf1702b?size=400" />
+        <p><strong>Contato</strong><br><a href="mailto:vsmjcc@yahoo.com.br">vsmjcc@yahoo.com.br</a><br><a href="https://www.linkedin.com/in/vantuir-junior-836194122" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p class="muted">Brasil · Remoto</p>
+      </aside>
     </section>
 
-    <section class="section card" id="xp">
+    <section class="grid">
+      <article class="card span-8">
+        <h2>Resumo profissional</h2>
+        <p>Atuo na construção e evolução de plataformas analíticas, conectando engenharia de dados, analytics engineering, BI e negócio. Minha experiência inclui criação de Data Warehouses em modelo dimensional, pipelines Python/SQL, cargas incrementais, logs, validação OLTP vs OLAP, dashboards, governança e orquestração com Dagster.</p>
+        <p>Também venho trabalhando com IA aplicada a dados, usando LLMs, MCPs, skills, n8n e agentes internos para apoiar conversão de queries, criação de consultas, documentação de regras de negócio e produtividade das áreas técnicas e de negócio.</p>
+      </article>
+      <article class="card span-4">
+        <h2>Foco</h2>
+        <div class="chips"><span class="chip">Data Engineering</span><span class="chip">Analytics Engineering</span><span class="chip">Data Warehouse</span><span class="chip">Data Modeling</span><span class="chip">ETL/ELT</span><span class="chip">BI</span><span class="chip">Data Governance</span><span class="chip">AI Automation</span></div>
+      </article>
+    </section>
+
+    <section class="card section">
       <h2>Experiência</h2>
-      <div class="xp" id="xp-list"></div>
+      <div class="xp"><div class="date">2026 — atual</div><div><h3>Senior Data Engineer · Reserva INK</h3><p class="muted">Evolução do ecossistema de dados da empresa com Data Warehouse, dbt, Dagster, BI, governança, observabilidade e automações com IA.</p><ul><li>Orquestração de pipelines com Dagster, assets, jobs e schedules.</li><li>Modelos analíticos com dbt e padronização de regras de negócio.</li><li>Validação entre OLTP e OLAP, monitoramento e logs de execução.</li><li>Criação de agentes internos e automações para apoiar queries, dashboards e linguagem natural.</li></ul></div></div>
+      <div class="xp"><div class="date">2025 — 2026</div><div><h3>Mid-level Data Engineer · Reserva INK</h3><p class="muted">Implantação inicial do ecossistema de dados do zero, com Heroku, PostgreSQL, Metabase, ETLs e Data Warehouse.</p><ul><li>Construção de Data Warehouse em modelo dimensional.</li><li>Pipelines ETL/ELT em Python e SQL com cargas incrementais.</li><li>Dashboards no Metabase e introdução da cultura data-driven.</li></ul></div></div>
+      <div class="xp"><div class="date">2023 — 2025</div><div><h3>Mid-level Data Engineer · Zerezes</h3><p class="muted">Construção de Data Warehouse, Data Marts, Data Lake em AWS e pipelines com Airflow.</p><ul><li>AWS Glue, Redshift, S3, EC2, Lambda, Step Functions, EventBridge, CloudWatch, IAM e Athena.</li><li>Data Lake em camadas Bronze, Silver e Gold com PySpark.</li><li>Orquestração de DAGs e melhoria da confiabilidade analítica.</li></ul></div></div>
+      <div class="xp"><div class="date">2022 — 2023</div><div><h3>Entry-Level Data Engineer · Zerezes</h3><p class="muted">Migração de relatórios manuais para pipelines automatizados, bases analíticas e dashboards em Metabase.</p></div></div>
+      <div class="xp"><div class="date">2021 — 2022</div><div><h3>Data Analyst · Zerezes</h3><p class="muted">Dashboards, integração de fontes, padronização de indicadores e estruturação inicial de BI para e-commerce.</p></div></div>
+      <div class="xp"><div class="date">2018 — 2021</div><div><h3>Analista de Dados · Skyup</h3><p class="muted">Tratamento de dados operacionais, relatórios, dashboards e automações para apoio à tomada de decisão.</p></div></div>
     </section>
 
-    <section class="section card" id="education">
+    <section class="grid section">
+      <article class="card span-4"><h2>Data & Analytics</h2><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Pandas</span><span class="chip">PySpark</span><span class="chip">dbt</span><span class="chip">Metabase</span><span class="chip">Power BI</span><span class="chip">Looker Studio</span></div></article>
+      <article class="card span-4"><h2>Cloud & Orquestração</h2><div class="chips"><span class="chip">Dagster</span><span class="chip">Airflow</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Heroku</span><span class="chip">Redshift</span><span class="chip">BigQuery</span><span class="chip">S3</span><span class="chip">Cloud Storage</span></div></article>
+      <article class="card span-4"><h2>IA & Automação</h2><div class="chips"><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">n8n</span><span class="chip">MCPs</span><span class="chip">Skills</span><span class="chip">Lovable</span><span class="chip">AI Agents</span></div></article>
+    </section>
+
+    <section class="card section">
       <h2>Formação</h2>
-      <div class="edu" id="edu-list"></div>
+      <p><strong>Bacharelado em Ciência da Computação</strong></p>
+      <p><strong>Pós-graduação em Desenvolvimento Mobile</strong></p>
+      <p><strong>Licenciatura em Matemática</strong></p>
     </section>
-
-    <section class="section card" id="contato">
-      <h2>Contato</h2>
-      <p>Aberto a colaborações e projetos. Envie um e-mail para <a href="mailto:vsmjcc@yahoo.com.br">vsmjcc@yahoo.com.br</a> ou conecte-se pelo <a href="https://www.linkedin.com/in/vantuir-junior-836194122" target="_blank" rel="noopener">LinkedIn</a>.</p>
-    </section>
-
-    <footer>© <span id="year"></span> Vantuir Junior. Todos os direitos reservados.</footer>
   </main>
-
-  <script>
-    // ===== Dados (com base no seu LinkedIn e agregadores públicos) =====
-    const data = {
-      experiences: [
-        { company:"Zerezes", role:"Cientista/Engenheiro de Dados", period:"2021 — atual", summary:"DW em Postgres (Heroku), ETLs em Python (pandas/psycopg2) com logs (dw.job_logs) e cargas incrementais; dashboards no Metabase; padronização de KPIs.", bullets:["Modelagem estrela/constelação","Pipelines escaláveis e observabilidade","Indicadores de churn/retensão"]},
-        { company:"Copel", role:"Analista de Dados", period:"2021 — 2023", summary:"Relatórios executivos e automações; governança de dados e KPIs; SQL avançado/Power BI.", bullets:["SQL e ETL","Power BI","Integrações e automações"]},
-        { company:"Winponta", role:"Desenvolvedor", period:"2019 — 2021", summary:"Integrações e APIs; sustentação de sistemas; análises ad hoc.", bullets:["APIs REST","Python","Integrações externas"]}
-      ],
-      education: [
-        { course:"Bacharelado em Ciência da Computação", org:"Universidade Veiga de Almeida" },
-        { course:"Pós-graduação em Desenvolvimento Mobile", org:"Universidade Estácio de Sá" },
-        { course:"Licenciatura em Matemática", org:"Estácio" }
-      ]
-    };
-
-    // Render XP
-    const xpList = document.getElementById('xp-list');
-    data.experiences.forEach(x=>{
-      const el = document.createElement('div');
-      el.className = 'xp-item';
-      el.innerHTML = `
-        <h3>${x.role} · <span style="color:var(--brand)">${x.company}</span></h3>
-        <div class="meta">${x.period}</div>
-        <p>${x.summary}</p>
-        ${x.bullets ? `<ul>${x.bullets.map(b=>`<li>${b}</li>`).join('')}</ul>`:''}
-      `;
-      xpList.appendChild(el);
-    });
-
-    // Render EDU
-    const eduList = document.getElementById('edu-list');
-    data.education.forEach(e=>{
-      const el = document.createElement('div');
-      el.innerHTML = `<strong>${e.course}</strong> <span class="subtitle"> — ${e.org}</span>`;
-      eduList.appendChild(el);
-    });
-
-    // Utilidades
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Toggle Resumo
-    const btn = document.getElementById('toggle-resumo');
-    let resumido = false;
-    btn.addEventListener('click', ()=>{
-      resumido = !resumido;
-      document.getElementById('education').style.display = resumido ? 'none':'block';
-      document.getElementById('quick-facts').style.display = resumido ? 'none':'block';
-      btn.textContent = resumido ? 'Versão completa' : 'Resumir';
-    });
-  </script>
+  <footer>© <span id="year"></span> Vantuir Junior. Currículo profissional.</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
